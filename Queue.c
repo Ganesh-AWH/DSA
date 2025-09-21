@@ -1,8 +1,8 @@
 #include<stdio.h>
 #define n 10
-int queue[n];
-int front = -1;
-int rear = -1;
+int queue[n];                 
+int front = -1;            
+int rear = -1;               
 //enqueu, deque, display, isempty, isfull
 void enqueue(int ele){
     //queue overflow condition
@@ -49,6 +49,7 @@ void display(){
         printf("Queue is empty\n");
         return;
     }
+
     for(int i=front; i<=rear; i++){
         printf("%d ", queue[i]);
     }

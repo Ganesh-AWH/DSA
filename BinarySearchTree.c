@@ -43,8 +43,8 @@ void postOrderTraversal(struct Node *root){
     if(root == NULL) return;
 
     postOrderTraversal(root->left);
-    printf("%d ", root->data);
     postOrderTraversal(root->right);
+    printf("%d ", root->data);
 }
 int main(){
     struct Node *root = NULL;

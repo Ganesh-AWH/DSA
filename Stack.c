@@ -1,5 +1,6 @@
 #include<stdio.h>
 #define n 10
+//global variables
 int stack[n];
 int top = -1;
 
@@ -35,11 +36,14 @@ void display(){
     for(int i=top; i>=0; i--){
         printf("%d ", stack[i]);
     }
+
     printf("\n");
 }
 int main(){
     int is_over = 0;
     int option;
+
+
     while(!is_over){
         printf("Operations\n");
         printf("1. push\n");
@@ -74,3 +78,4 @@ int main(){
 
 
 }
+
